@@ -9,34 +9,54 @@
     li a
     {
         display: block;
-        width: 120px;
-        background-color: aqua;
         text-decoration-line: none;
-        height: 120px;
+        text-align: center;
+        font-size: 30px;
+        height: 100px;
+        color: rgba(117, 74, 205, 0.851);
+        font-weight: 700;
+    }
+
+    .grid-container > div
+    {
+        display: grid;
+        background-color: brown;
         text-align: center;
     }
 </style>
 
 <body>
-    <table border="1";>
+    <table border="1" style="width: 100%;">
+        <div class="container">
+            <div class=" row cols-2">
+                 <nav>
+                 <div class="col-md-2 divNav">
+                     <ul style="list-style-type: none; margin: 0%; padding: 0%;" >
+                            <li style="padding-top: 50px;">
+                                <a href="">Hakkımda</a>
+                            </li>
+                            <li>
+                                <a href="">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <header>
+                    <div class="col-md-8 divCvHeader">  
+                        Kadir Tuna Yiğit <br> CV
+                    </div>
+                </header>
+            </div>
+           
 
-        <div class="float-container" style="width: auto;">
-            <header>
-                <div class="divCvHeader" style="float: right;" id="header"><b>Kadir Tuna YİĞİT<br> CV</b></div>
-            </header>
-    
-            <nav>
-                <div class="divNav">
-                    <br>
-                    <a href="" style="text-decoration: none;"><h4>Hakkımda</h4></a>
-                    <br>
-                    <a href="" style="text-decoration: none;"><h4>CV</h4></a>
-                    <br>
-                    <a href="" style="text-decoration: none;"><h4>Şehrim</h4></a>
-                    <br>
-                    <a href="" style="text-decoration: none;"><h4>Destek</h4></a>
-                </div>
-            </nav>
+            <div class="row justify-content-md-center" style="padding-top: 100px; margin-left: 100px;">    
+                <p>
+                    ilkokulu istanbulda ortaokulu düzcede liseyi kocaelide okudum
+                    
+                </p>
+            </div>
+            
         </div>
     </table>
 

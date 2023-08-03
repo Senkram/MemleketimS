@@ -1,75 +1,173 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memleketim Sakarya</title>
+</head>
 
-    </head>
+<body>
+    <div class="container" style="background-color: cornsilk;">
+        <header class="headerStyle">
+            <div class="headerDiv">
+                <b>Hakkımda</b>
+            </div>
+        </header>
 
-    <body>
-        <title>Memleketim Sakarya</title>
-        <table border="1"; style="width:100%";>
-        <tr>
-            <td height="60px"; style="text-align: center;"><img src="images/settingsImage.png" alt="Ayarlar" width="50%;"></td>
+        <nav class="container" style="background-color: black; padding:20px 0;">
+            <div id="pages" class="navFirstDiv">
+                <a href="" class="navLeft">Hakkımda</a>
+                <a href="" class="navLeft">Şehrim</a>
+                <a href="cv.html" class="navLeft">CV</a>
+                <a href="" class="navLeft">Destek</a>
+            </div>
+            <div class="navSecondDiv">
+                <a href="" style=" text-decoration: none; color: aliceblue;">Giriş Yap</a>
+            </div>
+        </nav>
+
+        <section class="section1">
+            WEB SAYFAMA HOŞGELDİN! <br> <br> ADIM KADİR TUNA YİĞİT. 20 YAŞINDAYIM. SAÜ BİLGİSAYAR MÜHENDİSLİĞİNDE 2. SINIFA GEÇTİM.
+        </section>
+
+        <article style="margin: 0 5%; font-size: 20px;" class="container">
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Arkadaşlarımla ve ailemle vakit geçirmek en sevdiğim şeyler arasındadır. Bir süredir olmasa da oyun oynarım.
+                Anime izlemeyi; webtoon ve novel okumayı severim.  
+                Müzik dinlemek genelde beni rahatlatır.
+                 Tutkulu olmasam da futbol maçlarını izlerim.
+                 Dizimi sakatlamadan önce futbol, basketbol ve voleybol oynamayı severdim.
+                 Hala sevmeme rağmen yapmam en azından bir süre mümkün görünmüyor :)
+            </p>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bir tane köpeğim var. Kendisi American Staffordshire Terrier'dir. Bir nevi pitbull kırması diyebiliriz. Adı da Hector.
+                Gayet karizmatik bir isim bence.
+            </p>
             
+            <input type="button" name="hector" id="hector" value="Hector'u görmek için tıkla: " onclick="getHector()" style="margin-left: 10%; width: 15%; height: 40px;">
+            <div style="margin:30px 0%; text-align: center;">
+                <img src="images/hector.jpg" alt="" class="images1" id="hectorIMG">
+                <img src="images/hector2.jpg" alt="" class="images1" id="hectorIMG2">
+                <img src="images/hector3.jpg" alt="" class="images1" id="hectorIMG3">
+                <img src="images/hector4.jpg" alt="" class="images1" id="hectorIMG4">
+            </div>
+        </article>
+
+        <div class="container" style="display: flex;">
+
+            <article class="article2">
+                <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Biraz da animelerden bahsetmek istiyorum. Birçok kişi anime izleyenlerin ezik olduğunu düşünür.
+                    Tamamen karşı çıkmıyorum ama duygusal insanların daha çok anime izlediği bence doğru. Animelerde verilen aşırı tepkiler ve Japoncanın güzelliği
+                    son yıllarda birçok kişiyi iyice animelerin içine çektiğini düşünüyorum.
+                    
+                </p>
+            </article>
+
+            <aside class="aside1">
+                <em>Bu arada Preply uygulamasında Japon hocalardan Japonca dersi alıyorum. Tavsiye ederim.</em>
+            </aside>
+        </div>
+        
+        <section style="text-align: center; font-size: x-large;">
+            <span class="animeHeader">ANİMELER</span>
             
-            <td colspan="2"; style="text-align: center;"><h1 style="font-family: 'Courier New', Courier, monospace;">ANA SAYFA</h1></td>
-            
-            <td width="120px;" style="text-align: center;"><a href="logInpage.html"
-                style="font-family: cursive;" style="text-decoration: none;">Giriş yap</a></td>
-            <td width="120px;" style="text-align: center;"><a href="signInpage.html"
-                style="font-family: cursive;" style="text-decoration: none;">Kaydol</a></td>
-        </tr>
-        <tr height="60px">
-            <td style="text-align: center;"><a href="images.html" style="text-decoration: none;">Görseller</a></td>
-            <td colspan="2";></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr height="60px">
-            <td style="text-align: center;"><a href="support.html" style="text-decoration: none;">Destek</a></td>
-            <td rowspan="2"; colspan="2";><h3 style="padding-left: 10%;">Hakkımda</h3> <p style="padding-left: 5%;">
-                Merhabalar, benim adım Kadir Tuna YİĞİT. Sakarya Üniversitesi Bilgisayar Mühendisliğinde okuyorum.
-                2003 doğumluyum. Sizlere annemin memleketi olan ve benim de şuan ikamet ettiğim 
-                Sakarya'yı anlatacağım.</p></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr height="60px";>
-            <td style="text-align: center;"><a href="cv.html" style="text-decoration: none;">CV</a></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td style="text-align: center; height: 60px;">Şehrim</td>
-            <td colspan="2"; rowspan="2";><p style="padding-left: 5%;">Sakarya büyükşehir olmasına rağmen şahsen çok gelişmiş bir yer değildir.
-                Tabi ki bunun getirdiği zararlar olduğu gibi faydaları da var. Temiz hava, nispeten hızlı bir trafik, organik yaşam gibi...
-                Zararları ise sosyal alanların ve aktivitelerin azınlıkta olması; mesela birkaç sene önce gokarta binmek istemiştim ve burada bulamamıştım.
-                Gerçi geçen bir haberde Sakarya'da da bir tane açıldığını duydum. Benle gelmek isteyen olursa gidebiliriz belki ☻.
-                Her ne kadar burayı sevsem de benim de şikayetlerim var tabi. Mesela kötü koku; özellikle Yazlık kavşağında ve benim evime yakın olan bir alanda.
-                Evim valiliğin birkaç yüz metre ilerisinde olmasına rağmen maalesef bir altyapı yok.
-                Her ne kadar yeni bir yerleşim yeri gibi olsa da 3 yıldır burada oturmaktayım ve internet sorunu yaşıyoruz.
-                Oturduğum yerde birçok başıboş köpek var ve bu bazı insanları tedirgin edebiliyor. Köpeğim olduğu için pek korktuğum söylenemez.
-                Ancak en azından bu köpeklerin kısırlaştırılması gerekiyor ki istila devam etmesin. </p> 
-                <p style="padding-left: 5%;">Farkettim ki biraz fazla olumsuzlardan bahsetmişim ☻. Ama dediğim gibi ben bu şehri seviyorum.
-                Şimdi biraz da gezilebilecek, arkadaşlar ve ailelerle beraber gidilebilecek yerlere göz atalım.</p>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            
-        </tr>
-        <tr>
-            <td></td>
-            <td style="width:5%;"><a href="https://tr.wikipedia.org/wiki/Sapanca_G%C3%B6l%C3%BC"><img src="images/sapancagolu.jpg" alt="sapancagolu" width="200px"; title="Sapanca Gölü";></img></a></td>
-            <td style="padding-left: 30px;">Burası Sapanca Gölü</td>
-            <td></td>
-            <td></td>
-        </tr>
-        </table>
-            
-    </body>
+        </section>
+
+        <article style="background-color: rgb(128, 20, 161);">
+            <p style="padding-left: 10%; font-size: 25px; background-color: rgb(192, 126, 212);">En sevdiğim animeler:</p>
+
+            <p style="margin-left: 5%; font-family: cursive; font-weight: bold;">Not: Çoğunu yıllar önce izledim ve hatırladığım kadarıyla bu listeyi yaptım!</p>
+            <ul style="list-style-type: none; background-color: rgb(128, 20, 161); text-align: center;">
+
+                <li class="animeImagesLi">
+                    <p>Koe no Katachi</p>
+                    <img src="images/Koe-no-Katachi-anime.jpg" alt="Koe No Katachi" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Boku dake ga Inai Machi (Erased)</p>
+                    <img src="images/erased.png" alt="Erased" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Overlord</p>
+                    <img src="images/overlord.png" alt="Overlord" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</p>
+                    <img src="images/danmachi.jpg" alt="Danmachi" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Kiseijuu: Sei no Kakuritsu (Parasyte)</p>
+                    <img src="images/parasyte.jpg" alt="Parasyte" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Death Note</p>
+                    <img src="images/deathNote.jpg" alt="Death Note" width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Chuunibyou demo Koi ga Shitai!</p>
+                    <img src="images/chuunibyo.webp" alt="Chuunibyou demo Koi ga Shitai!" width="auto;" height="250px">
+                </li>
+                
+                <li class="animeImagesLi">
+                    <p>Toradora!</p>
+                    <img src="images/toradora.jpg" alt="Toradora!" width="auto;" height="250px">
+                </li>
+                
+                <li class="animeImagesLi">
+                    <p>Sukitte Ii na yo.</p>
+                    <img src="images/sukitte.jpg" alt="Sukitte Ii na yo." width="auto;" height="250px">
+                </li>
+
+                <li class="animeImagesLi">
+                    <p>Re:Zero kara Hajimeru Isekai Seikatsu</p>
+                    <img src="images/rem.jpg" alt="Re:Zero kara Hajimeru Isekai Seikatsu 1" width="auto;" height="250px">
+                    <img src="images/rem2.jpg" alt="Re:Zero kara Hajimeru Isekai Seikatsu 2" width="auto;" height="250px">
+                    <img src="images/rem3.png" alt="Re:Zero kara Hajimeru Isekai Seikatsu 3" width="auto;" height="250px">
+                    <p><b>Herhalde bu şahsın en sevdiğim karakter olduğunu anlamışsınızdır. :D</b></p>
+                </li>
+
+                
+            </ul>
+        </article>
+
+        <section>
+
+        </section>
+    </div>
+
+    <script src="javascript/text" href="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mySheet.css">
+</body>
+
+<script>
+    function getHector()
+    {
+        var hectorImg =  document.getElementById("hectorIMG");
+        var hectorImg2 =  document.getElementById("hectorIMG2");
+        var hectorImg3 =  document.getElementById("hectorIMG3");
+        var hectorImg4 =  document.getElementById("hectorIMG4");
+        
+        if(hectorImg.style.display == "none" && hectorImg2.style.display == "none" && hectorImg3.style.display == "none" && hectorImg4.style.display == "none")
+        {
+            hectorImg.style.display = "inline-block"
+            hectorImg2.style.display = "inline-block"
+            hectorImg3.style.display = "inline-block"
+            hectorImg4.style.display = "inline-block"
+        }
+        else
+        {
+            hectorImg.style.display = "none"
+            hectorImg2.style.display = "none"
+            hectorImg3.style.display = "none"
+            hectorImg4.style.display = "none"
+        }
+    }
+</script>
 </html>

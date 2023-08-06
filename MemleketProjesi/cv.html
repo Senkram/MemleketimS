@@ -1,17 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">     
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
 </head>
 <body>
-    <div class="container">
+    
 
+    <div class="w-100 h-100 text-white" style="background-color: darkslategrey;">
+        <header class="headerStyleCv">
+            <div class="headerDivCv">
+                <b>Kadir Tuna Yiğit CV</b>
+            </div>
+        </header>
+
+        <nav style="background-color: black; padding:20px 0;">
+            <div id="pages" class="navFirstDiv">
+                <a href="mainpage.html" class="navLeft">Hakkımda</a>
+                <a href="myCity.html" class="navLeft">Şehrim</a>
+                <a href="#" class="navLeft">CV</a>
+                <a href="support.html" class="navLeft">Destek</a>
+            </div>
+            <div class="navSecondDiv">
+                <a href="logInpage.html" style=" text-decoration: none; color: aliceblue;">Giriş Yap</a>
+            </div>
+        </nav>
+        <article class="align-items-center justify-content-start m-5">
+            <div class="p-2 articleCv">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fatih/İstanbul'da 08.04.2003 tarihinde doğdum. Okul hayatıma 2 yaşında kreşe giderek başladım.
+                    İlkokulumun 3 yıl ve bir dönemi İstanbul'daki Osmangazi İlkokulunda geçti.
+                    Kalan bir dönemde ise Düzce'de Uzunmustafa İlkokulunda okudum.
+                </div>            
+            </div>
+        </article>
+    
+        <div class="d-flex">
+            <input type="button" id="showOsmanGazi" value="Osmangazi İlkokulu " onclick="getOsmanGazi()" style="margin-left: 20%; width: 15%; height: 40px;">
+            <img src="images/IMG-20210210-WA0008.jpg" alt="" id="osmanGazi" style="display: none; height: 200px; width: auto; margin:0 2%;">
+            <input type="button" id="showUzunMustafa" value="Uzunmustafa İlkokulu " onclick="getUzunMustafa()" style="margin-left: 20%; width: 15%; height: 40px;">
+            <img src="images/rem3.png" alt="" id="uzunMustafa" style="display: none; height: 200px; width: auto; margin:0 2%;">
+        </div>
+    
+        
+        <article class="align-items-center justify-content-start m-5">
+            <div class="p-2 articleCv">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ortaokulda 
+                </div>           
+            </div>
+        </article>
+    
+        <article class="align-items-center justify-content-start m-5">
+            <div class="p-2 articleCv">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8. sınıfta liseye geçiş sınavı olan TEOG1 ve TEOG2'ye girdim.
+                    TEOG1'de 4 yanlışım varken TEOG2'de full yapmıştım.
+                    500 üzerinden 493,4 gibi bir puan aldım. Tabi o yıl sınav kolay olduğu için okulların puanları da baya bir yükselmişti.
+                    Aldığım puanla Kocaeli Fen Lisesine kaydoldum. O sırada Sakarya'ya taşındık. Ben de lisede yurtta kaldım.
+    
+                </div>           
+            </div>
+        </article>
+                   
+        <article class="align-items-center justify-content-start m-5">
+            <div class="p-2 articleCv">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 sene öyle geçti ve sonunda karşıma TYT ve AYT çıktı. TYT'de 16.000'e yakın bir sıralama yapmıştım.
+                    AYT ise pek iyi geçmedi benim için. Matematikte 28 boşum vardı. Sonuçlar açıklandı ve 34.000'e yakın bir sıralama yaptığım açıklandı.
+                    İstanbul Kültür Üniversitesi Bilgisayar Mühendisliği bölümüne yerleştim ancak bir sene dondurdum üniversitemi.
+                    Sonrasında ise aile evimde yaşamak istediğimi farkettim ve Sakarya Üniversitesine merkezi puanla yatay geçiş yaptım.
+                    İkinci dönem deprem nedeniyle okullar online olduğu için pek üniversite hayatını deneyimleyemedim ancak olacaklardan umutluyum.
+    
+                </div>           
+            </div>
+        </article>
     </div>
+    
 
-    <link rel="stylesheet" href="css/mySheet.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script href="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mySheet.css">
+  <script src="javascript/text" href="js/bootstrap.min.js"></script>
 </body>
+
+<script>
+    function getOsmanGazi()
+    {
+        var oGazi = document.getElementById("osmanGazi");
+        if(oGazi.style.display == "none")
+        {
+            oGazi.style.display = "block"
+        }
+        else if(oGazi.style.display == "block")
+        {
+            oGazi.style.display = "none"
+        }
+    }
+
+    function getUzunMustafa()
+    {
+        var uzunMustafa = document.getElementById("uzunMustafa");
+        if(uzunMustafa.style.display == "none")
+        {
+            uzunMustafa.style.display = "block"
+        }
+        else if(uzunMustafa.style.display == "block")
+        {
+            uzunMustafa.style.display = "none"
+        }
+    }
+</script>
 </html>

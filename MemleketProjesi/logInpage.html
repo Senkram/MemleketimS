@@ -1,19 +1,44 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
 </head>
 <body>
-    <table class="container" style="width: 100%;">
-        <div class="col-6 divSign" >
-            <tr>
-                <td>Deneme</td>
-            </tr>
+    <div class="w-100 bg-warning h-100" style="padding: 20%;">
+
+        <div class="container  form-logIn">
+            <form action="logInphp.php" method="post">
+                <div class="mb-3">
+                    <label for="username">Kullanıcı Adı: </label>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Username" pattern=".{4,10}" aria-label="default input example" autofocus autocomplete="username" required>                
+                </div>
+                <div class="mb-3">
+                    <label for="password">Şifre: </label>
+                    <input class="form-control" type="text" name="password" id="password" placeholder="Password" pattern="[0-9]{4,10}" aria-label="default input example" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email: </label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="example@hotmail.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirm">Onay</label>
+                    <input type="checkbox" name="confirm" id="confirm" required>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" name="" id="">
+                </div>
+                
+            </form>
+            
+            <form action="mainpage.html">
+                <input type="submit" name="submit" id="submit" value="Ana sayfaya geri dön">
+            </form>
         </div>
-    </table>
+    </div>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="javascript/text" href="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/mySheet.css">
 </body>
 </html>

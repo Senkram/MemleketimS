@@ -1,25 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8">
-    </head>
-    <body> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destek</title>
+</head>
+<body>
 
-      <table style="width: 100%;" class="container">
-        <div class="col-6 -bs-danger">
-          <form action="mainpage.html" method="get">
-            <label for="username">Kullanıcı Adı: </label>
-            <input type="text" name="sign_username" id="username" style="cursor:auto; " pattern=".{2,4}" required>
-            
-            <button type="button" class="btn btn-primary">primary</button>
+  <div class="container-fluid w-100" style="background-color: rgb(80, 191, 195);">
+    <div class="row justify-content-center">
+      <article class="m-5 col-8">
+        
+        <form action="supportSpace.php" method="post">
+          <input type="search" name="" id="" placeholder="Ara" style="margin-bottom: 40px;">
+        <div class="row">
+            <label for="slct" style="font-size: larger;">Sorununuz bunlardan biri olabilir mi?</label>
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" id="slct" name="slct">
+              <option value="0" selected>Hiçbiri değil.</option>
+              <option value="1" id="1">Web sayfasıyla ilgili bir şikayette bulunmak istiyorum.</option>
+              <option value="2" id="2">Web sayfasının sahibiyle iletişime geçmek istiyorum.</option>
+              <option value="3" id="3">Web sayfası için bir öneride bulunmak istiyorum.</option>
+              <option value="4" id="4">Giriş yapamıyorum.</option>
+            </select>
+          </div>
+          
+          <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
+            <label class="form-check-label" for="flexCheckDefault">Sorununuzu bulabildiyseniz kutucuğu işaretleyiniz.</label>
+          </div>
+          
+          <div class="my-4 d-flex">
+            <div class="me-3">
+              <label for="date">Sorununuzun ortaya çıktığı tarihi işaretleyiniz.</label>
+            </div>
+            <input type="date" name="date1" id="date1">
+          </div>
+          
+          Destek sayfamıza 1-5 arası bir puan veriniz. <br> <br>
+          <div class="d-flex">
+            <div class="me-4">
+              <input type="radio" name="rad" id="rad1" value="1">
+              <label for="rad1">1</label>
+            </div>
+            <div class="me-4">
+              <input type="radio" name="rad" id="rad2" value="2">
+              <label for="rad2">2</label>
+            </div>
+            <div class="me-4">
+              <input type="radio" name="rad" id="rad3" value="3">
+              <label for="rad3">3</label>
+            </div>
+            <div class="me-4">
+              <input type="radio" name="rad" id="rad4" value="4">
+              <label for="rad4">4</label>
+            </div>
+            <div class="me-4">
+              <input type="radio" name="rad" id="rad5" value="5">
+              <label for="rad5">5</label>
+            </div>
+          </div>
+          <input type="reset" name="" id="" class="my-4">
+          <input type="submit" name="" id="" class="mx-4">
+        </form>
+        <div class="d-flex">
+          <form action="mainpage.html">
+            <input type="submit" name="submit" id="submit" value="Ana sayfaya geri dön">
           </form>
         </div>
-        <div class="col-md-6 divSign text-danger">3222</div>
-        <div class="col">1111</div>
-      </table>
-
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="css/mySheet.css">
-    </body>
-</html> 
+      </article>
+    </div>
+  </div>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mySheet.css">
+  <script src="javascript/text" href="js/bootstrap.min.js"></script>
+</body>
+</html>

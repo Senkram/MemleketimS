@@ -146,6 +146,13 @@ li a.navList
           font-size: xx-large;
 }
 
+.articleCv
+{
+    font-size: 18;
+     margin-left: 10%;
+      margin-right: 10%;
+}
+
 .headerStyleMyCity
 {
     font-size: x-large;
@@ -164,16 +171,42 @@ li a.navList
           font-size: xx-large;
 }
 
-.articleCv
-{
-    font-size: 18;
-     margin-left: 10%;
-      margin-right: 10%;
-}
-
 .myCityList
 {
     text-decoration: none;
      font-size: 20px;
       color: rgb(61, 248, 195);
+}
+
+.item
+{ height:800px;}
+
+.item img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.sliderPha
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.headerStyleInterest
+{
+    font-size: x-large;
+     text-align: center;
+     background-color: rgb(236, 82, 51);
+}
+
+.headerDivInterest
+{
+    border-radius: 200px;
+     border: 15px solid  rgb(100, 10, 10);
+      background-color: rgb(185, 49, 60);
+       margin: 0 35%;
+        width: 30%;
+         padding: 3% 0;
+          font-size: xx-large;
 }

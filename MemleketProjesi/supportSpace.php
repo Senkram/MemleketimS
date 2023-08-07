@@ -1,4 +1,7 @@
 <?php
+
+    echo "Emailiniz: ".$_POST["email"]."<br>";
+
     $selectIssue = $_POST["slct"];
     if($selectIssue == 1)
     {
@@ -35,5 +38,10 @@
         echo "Tarih: ".$_POST["date1"]."<br>";
     }
 
-    echo "Web sitemize vermiş olduğunuz puan: ".$_POST["rad"];
+    if($_POST["rad"] != '')
+    {
+        echo "Web sitemize vermiş olduğunuz puan: ".$_POST["rad"]."<br>";
+    }
+
+    echo "Notlarınız: ".$_POST["notes"]."<br>";
 ?>

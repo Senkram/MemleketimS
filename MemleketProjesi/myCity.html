@@ -5,37 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şehrim</title>
 </head>
-<body>
-    <div class="container-fluid bg-primary">
+<style>
+    .bodyStyleCity
+    {
+        background-color: rgb(215, 88, 79);
+    }
+</style>
+<body class="bodyStyleCity">
+    <div class="container-fluid">
         <div class="row">
-                <header class="headerStyleMyCity">
-                    <div class="headerDivMyCity">
-                        <b>Şehrim Sakarya</b>
-                    </div>
-                </header>
-            
-                <nav style="background-color: black; padding:20px 0;">
-                    <div id="pages" class="navFirstDiv">
-                        <a href="mainpage.html" class="navLeft">Hakkımda</a>
-                        <a href="#" class="navLeft">Şehrim</a>
-                        <a href="cv.html" class="navLeft">CV</a>
-                        <a href="support.html" class="navLeft">Destek</a>
-                    </div>
-                    <div class="navSecondDiv">
-                        <a href="logInpage.html" style=" text-decoration: none; color: aliceblue;">Giriş Yap</a>
-                    </div>
-                </nav>
+            <header class="headerStyleMyCity">
+                <div class="headerDivMyCity">
+                    <b>Şehrim Sakarya</b>
+                </div>
+            </header>
+        
+            <nav style="background-color: black; padding:20px 0;">
+                <div id="pages" class="navFirstDiv">
+                    <a href="index.html" class="navLeft">Hakkımda</a>
+                    <a href="#" class="navLeft">Şehrim</a>
+                    <a href="cv.html" class="navLeft">CV</a>
+                    <a href="support.html" class="navLeft">Destek</a>
+                </div>
+                <div class="navSecondDiv">
+                    <a href="logInpage.html" style=" text-decoration: none; color: aliceblue;">Giriş Yap</a>
+                </div>
+            </nav>
         </div>
 
-        <div class="row">
-            <article>
-                
-            </article>
+        <section class="text-center my-4" style="font-weight: 800; font-size:x-large;">
+            Sakarya Hakkında
+        </section>
+
+        <article style="margin: 0 10%; font-size: 20px;" class="container my-5">
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;54 plakalı Sakarya bir büyükşehirdir. 2019 verilerine göre Türkiye'nin en kalabalık 22. şehridir ve 1,011 milyon nüfusa sahiptir.
+                06 Şubat 2023 TÜİK verilerine göre 16 İlçe ve belediye, bu belediyelerde ise toplam 668 mahalle bulunmaktadır. İl ismini topraklarından geçen Sakarya nehri'nden almıştır.
+                Sakarya İlinin merkezi Adapazarı'dır. Adapazarı 2021 yılında Danimarka'da aldığı ödül ile bisiklet şehri unvanını kazanmıştır. Yüz ölçümü 4.823 km²'dir.
+            </p>
+        </article>
+
+        <section class="text-center my-4" style="font-weight: 800; font-size:x-large;">
+            Coğrafyası
+        </section>      
+
+        <article style="margin: 0 10%; font-size: 20px;" class="container my-5">
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;İlin topoğrafyası üç ana kısımda incelenir: 1. Kuzeydeki alçak tepelik alanlar, 2. Orta kısımda Adapazarı ovası düzlüğü, 3. Güneyde engebeli dağlık alanlar.
+                İl topraklarının %34'ü ovalar, %44'ü platolar, %22'si dağlar tarafından oluşturulur. İlin en yüksek dorukları Keremali Dağı (1543 m) ve Karadağ'dır (1467 m).
+            </p>
+        </article>
+
+        <section class="text-center my-4" style="font-weight: 800; font-size:x-large;">
+            İklim ve Bitki Örtüsü
+        </section>
+
+        <article style="margin: 0 10%; font-size: 20px;" class="container my-5">
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sakarya ilinin Karadeniz kıyılarında Karadeniz iklimi, güney kısmında Marmara tipi Akdeniz iklimi etkilidir.
+                Kuzeyde Fındık yetiştirilirken, güney ilçelerinde bir kısmı zeytin bahçesi olan meyve bahçeleri yaygın olması bunun göstergesidir.
+                Sakarya'da iklimin etkisiyle nemcil Karadeniz Ormanları hakimdir. İl topraklarının %37'si (179.516,5 ha) korunmuş, %5'i (23.191,5 ha) bozulmuş olmak üzere %42'si (202.708,0 ha) orman alanıdır.
+            </p>
+        </article>
+        
+        <section class="text-center my-4" style="font-weight: 800; font-size:x-large;">
+            Gezilmesi Gereken Yerler
+        </section>
+
+        <article class="text-between">
+            <ul style="list-style-type: none; margin: 3% 10%; padding:0 1%;">
+                <div class="d-flex justify-content-around my-3">
+                    <li><a href="#depremKM" class="myCityList">Deprem Kültür Merkezi</a></li>
+                    <li><a href="#sakaryaPark" class="myCityList">Sakarya Park</a></li>
+                    <li><a href="#sakaryaOrmanPark" class="myCityList">Sakarya Orman Park</a></li>
+                </div>
+                <div class="d-flex justify-content-around my-3">
+                    <li><a href="#muze" class="myCityList">Sakarya Müzesi</a></li>
+                    <li><a href="#tabiatPark" class="myCityList">Sakarya İl Ormanı Tabiat Parkı</a></li>
+                    <li><a href="#poyrazlarGol" class="myCityList">Poyrazlar Gölü</a></li>
+                </div>
+                <div class="d-flex justify-content-around my-3">
+                    <li><a href="#sapancaGol" class="myCityList">Sapanca Gölü</a></li>
+                    <li><a href="#serdivanGolPark" class="myCityList">Serdivan Göl Park</a></li>
+                    <li><a href="#golya" class="myCityList">Gölya Tabiat Parkı</a></li>
+                </div>
+                <div class="d-flex justify-content-around my-3">
+                    <li><a href="#sehitlik" class="myCityList">Sakarya Şehitliği</a></li>
+                    <li><a href="#sakarbaba" class="myCityList">SakarBaba Türbesi </a></li>
+                    <li><a href="#tozluCami" class="myCityList">Tozlu Cami</a></li>
+                </div>
+            </ul>
+        </article>
+
+        <div class="d-flex mb-4" id="depremKM">
+            <img src="images/depremKM.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Deprem Kültür Merkezi
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="sakaryaPark">
+            <img src="images/sakaryaPark.png" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sakarya Park
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="sakaryaOrmanPark">
+            <img src="images/ormanPark.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sakarya Orman Park
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="muze">
+            <img src="images/müze.jpeg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sakarya Müzesi
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="tabiatPark">
+            <img src="images/tabiatPark.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sakarya İl Ormanı Tabiat Parkı
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="poyrazlarGol">
+            <img src="images/poyrazlar.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Poyrazlar Gölü
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="sapancaGol">
+            <img src="images/sapancagolu.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sapanca Gölü
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="serdivanGolPark">
+            <img src="images/serdivanGölPark.png" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Serdivan Göl Park
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="golya">
+            <img src="images/gölya.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Gölya Tabiat Parkı
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="sehitlik">
+            <img src="images/şehitlik.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Sakarya Şehitliği
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="sakarbaba">
+            <img src="images/sakarbaba.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası SakarBaba Türbesi
+            </div>
+        </div>
+        <div class="d-flex mb-4" id="tozluCami">
+            <img src="images/tozluCami.jpg" alt="" style="height: 400px; width: auto;">
+            <div style="margin-top: 200px; margin-left: 2%;">
+                Burası Tozlu Cami
+            </div>
         </div>
     </div>
     
     <link rel="stylesheet" href="css/mySheet.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="javascript/text" href="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

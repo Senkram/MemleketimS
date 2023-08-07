@@ -170,3 +170,10 @@ li a.navList
      margin-left: 10%;
       margin-right: 10%;
 }
+
+.myCityList
+{
+    text-decoration: none;
+     font-size: 20px;
+      color: rgb(61, 248, 195);
+}
